@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Basketo - Fresh Fruits & Veggies</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
       background: #f6f6f6;
       color: #333;
+    }
+    .container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    
+      
+      
     }
     header {
       background-color: #2ecc71;
@@ -20,41 +32,57 @@
       font-size: 24px;
     }
     main {
-      padding: 40px 20px;
+    align-self: center;
+      flex: 1;
+  display: flex;
+  flex-direction: column;
       text-align: center;
+      align-items: center;
+      justify-content: center;
     }
     .btn {
       background-color: #27ae60;
       color: white;
-      padding: 12px 20px;
+  padding: 10px 20px;
+  margin:30px;
       text-decoration: none;
       border-radius: 8px;
       font-size: 16px;
     }
+    p{
+      font-size:20px;
+      margin: 20px;
+      
+    }
     footer {
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
       background-color: #eaeaea;
+      font-size: 14px;
     }
+  
   </style>
 </head>
 <body>
 
-  <header>
-    Welcome to Basketo
-  </header>
+  <div class="container">
+    <header>
+      Welcome to Basketo
+    </header>
 
-  <main>
-    <h2>Fresh Fruits & Vegetables Delivered</h2>
-    <p>We deliver handpicked fruits and veggies to your doorstep within 10 km range.</p>
-    <a href="./privacy.html" class="btn" target="_blank">Privacy Policy</a>
-  </main>
-
-  <footer>
-    &copy; 2025 Basketo. All rights reserved.
-  </footer>
+    <main>
+        <h2>Fresh Fruits & Vegetables Delivered</h2>
+      <p>We deliver handpicked fruits and veggies to your doorstep within 10 km range.</p>
+       <p>we are  only available in balaghat now come to other cities in future. </p>
+       
+              <p>if you are on balaghat download app from playstore "basketo"</p>
+       
+      <a href="./privacy.html" class="btn" target="_blank">Privacy Policy</a>
+    </main>
+    <footer>
+      &copy; 2025 Basketo. All rights reserved.
+    </footer>
+  </div>
 
 </body>
 </html>
